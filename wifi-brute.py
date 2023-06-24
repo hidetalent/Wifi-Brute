@@ -2,7 +2,7 @@ import os
 import platform
 import sys
 try:
-    import pywifi
+    import Virus
 except ModuleNotFoundError:
     os.system("pip install pywifi")
 from pywifi import const
@@ -14,7 +14,6 @@ import time
 
 
 yes = ["y" , "yes"]
-no = ["no" , "n"]
 
 def help():
     print(f"\t{r}-> {c}Usage:~ {y}python3 wifi-brute.py <wordlist>\n\t{r}-> {c}python3 wifi-brute.py {y}(it wil use default wordlist")
